@@ -1,0 +1,96 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 5%;">
+    
+    <div class="text-center mb-5">
+      <h1>Get in Touch</h1>
+      <p class="lead">We'd love to hear from you. Please fill out the form below or contact us directly.</p>
+    </div>
+
+    <div class="row g-5">
+      
+      <div class="col-md-7">
+        <h2>Send us a Message</h2>
+        <form action="/contact/submit" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color:darkturquoise; border:none;">Send Message</button>
+        </form>
+      </div>
+
+      <div class="col-md-5">
+        <img class="img-fluid rounded mb-4" src="/static/dealership_office.png" alt="Our dealership office">
+        
+        <h2>Contact Information</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Sales Department:</strong>
+            <br>
+            <a href="mailto:sales@bestcars.com">sales@bestcars.com</a>
+          </li>
+          <li class="list-group-item">
+            <strong>Customer Support:</strong>
+            <br>
+            <a href="mailto:support@bestcars.com">support@bestcars.com</a>
+          </li>
+          <li class="list-group-item">
+            <strong>General Inquiries:</strong>
+            <br>
+            <a href="mailto:contact@bestcars.com">contact@bestcars.com</a>
+          </li>
+          <li class="list-group-item">
+            <strong>Phone:</strong>
+            <br>
+            1-800-555-CARS
+          </li>
+          <li class="list-group-item">
+            <strong>Address:</strong>
+            <br>
+            123 Best Cars Ave, Auto City, USA
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
