@@ -46,6 +46,7 @@ class CarModel(models.Model):
         ])
     fuel_type = models.CharField(max_length=10, choices=Fuel_Types, default='GASOLINE')
     # Other fields as needed
+    dealer_id = models.IntegerField(default=1)
     mileage = models.IntegerField(default=0)
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     color = models.CharField(max_length=200)
