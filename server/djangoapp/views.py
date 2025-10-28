@@ -36,11 +36,13 @@ def login_user(request):
         data = {"userName": username, "status": "Authenticated"}
     return JsonResponse(data)
 
+
 # Create a `logout_request` view to handle sign out request
 def logout_request(request):
     logout(request)
     data = {"userName":""} # Return empty username
     return JsonResponse(data)
+
 
 def get_cars(request):
     count = CarMake.objects.filter().count()
@@ -55,6 +57,7 @@ def get_cars(request):
 # Create a `registration` view to handle sign up request
 # @csrf_exempt
 # def registration(request):
+
 
 
 # # Update the `get_dealerships` view to render the index page with
